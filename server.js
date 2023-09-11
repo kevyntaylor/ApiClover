@@ -3,7 +3,6 @@ var cors = require('cors')
 var bodyParser = require('body-parser')
 const app = express();
 app.use(express.static('.'));
-// parse application/json
 app.use(bodyParser.json())
 var request = require('request');
 app.use(cors())
